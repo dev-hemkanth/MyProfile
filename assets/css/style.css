@@ -1,0 +1,27 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 15px;
+    overflow-y: auto;
+}
+#header .nav-menu {
+    padding: 0;
+    display: block;
+}
+#header .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#header .nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
