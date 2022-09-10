@@ -1,17 +1,22 @@
+
 body {
     font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-size: 16px;
     background-color: var(--bs-white);
 }
 
+
+
+/* Nav section */
 #header {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
+    z-index: 100;
 }
 
 /* laptop and layer screen */
@@ -109,3 +114,118 @@ body {
 #header .navbar-sm ul li a .name {
     margin-left: 10px;
 }
+
+
+/* Home section */
+#home {
+    
+    background: url('../images/home-bg.jpg') top right no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#home::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#home .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+
+    padding-left: 20%;
+    width: auto;
+    color: var(--bs-gray-700);
+
+}
+
+#home .intro-text .name {
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 3em;
+}
+#home .intro-text .who-am-i  {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 100;
+}
+#home .intro-text .who-am-i .wrap {
+ color: var(--bs-primary);
+}
+#home .intro-text .social-links {
+    margin-top: 10px;
+}
+#home .intro-text .social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 1.3em;
+}
+
+#home .intro-text .social-links ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+#home .intro-text .social-links ul li a {
+    color: var(--bs-gray-700);
+}
+
+#home .intro-text .social-links ul li a:hover {
+    color: var(--bs-primary);
+
+}
+
+/* main page */
+#main .main-section {
+    padding: 60px 0;
+}
+
+/* On medium screen and lower screen */
+@media (max-width: 768px) { 
+
+    #header {
+        left: auto;
+        right: 0;
+        height: auto;
+    }
+
+    #home .intro-text {
+        padding-left: 0;
+        padding: 10px;
+    }
+    
+    
+}
+
+/* On Smaller screen and lower screen */
+@media (max-width: 575.98px) { 
+    #home .intro-text {
+        width: 100%;
+        text-align: center;
+    }
+    #home .intro-text .name {
+        font-size: 2em;
+    }
+
+    #home .intro-text .who-am-i  {
+        font-size: 1.5em;
+
+    }
+
+    #home .intro-text .social-links ul {
+        justify-content: center;
+    }
+ }
