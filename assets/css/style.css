@@ -357,6 +357,22 @@ a:hover {
 #skills {
     background-color: var(--bs-gray-100);
 }
+#skills img {
+    height: 50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    margin-bottom: 30px;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#skills img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
 /* #skills .progress {
     height: 60px;
     display: block;
@@ -434,22 +450,7 @@ a:hover {
 } */
 
 
-#skills .img-fluid {
-    height: 50px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    margin-bottom: 30px;
 
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-}
-
-#skills .img-fluid:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-}
 
 /* On medium screen and lower screen */
 @media (max-width: 768px) { 
