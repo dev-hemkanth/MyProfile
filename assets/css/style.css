@@ -196,7 +196,7 @@ a:hover {
 }
 
 /* main page */
-#main .main-section {
+.main-section {
     padding: 60px;
 }
 .section-title {
@@ -238,6 +238,24 @@ a:hover {
     width: fit-content;
     margin: auto;
 }
+
+#scroll-top-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+#scroll-top-button.show {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* Resume */
 .resume .resume-title {
@@ -415,6 +433,24 @@ a:hover {
     -webkit-filter: grayscale(0%);
 }
 
+
+#skills img {
+    height: 50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    margin-bottom: 30px;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#skills img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
 /* On medium screen and lower screen */
 @media (max-width: 768px) { 
 
@@ -434,7 +470,6 @@ a:hover {
 
 #contact {
     background-color: var(--bs-gray-100);
-    padding: 60px;
 }
 
 #contact #carouselQuotes .carousel-indicators {
@@ -448,6 +483,9 @@ a:hover {
 
 /* On Smaller screen and lower screen */
 @media (max-width: 575.98px) { 
+    .main-section {
+        padding: 30px;
+    }
     #home .intro-text {
         width: 100%;
         text-align: center;
