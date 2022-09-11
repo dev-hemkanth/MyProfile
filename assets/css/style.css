@@ -357,7 +357,7 @@ a:hover {
 #skills {
     background-color: var(--bs-gray-100);
 }
-#skills .progress {
+/* #skills .progress {
     height: 60px;
     display: block;
     background: none;
@@ -431,10 +431,10 @@ a:hover {
 #skills .card-skill:hover .img-fluid {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
-}
+} */
 
 
-#skills img {
+#skills .img-fluid {
     height: 50px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -446,7 +446,7 @@ a:hover {
     -o-transition: all 0.3s ease-in-out;
 }
 
-#skills img:hover {
+#skills .img-fluid:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
